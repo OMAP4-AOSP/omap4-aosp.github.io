@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>OMAP4-AOSP</title>
+    <!-- Open graph tags to customize link previews. -->
+    <meta property="og:url"           content="https://omap4-aosp.github.io" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="OMAP4 Custom Rom Development" />
+    <meta property="og:description"   content="OMAP4 Custom Rom Development" />
     <!-- Latest compiled and minified CSS -->
     <link href="assets/material.min.css" rel="stylesheet">
     <!-- Theme -->
     <link href="assets/style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="main">
     <div class="container">
       <!-- Static navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -48,19 +54,25 @@
           </div>
         </div>
       </nav>
+    </div>
+
       <!-- Main body -->
       <div class="jumbotron">
-        <h2 id="heading">About the OMAP4-Android OpenSource Project</h2>
-        <p>The OMAP4-Android OpenSource Project was created in late 2015 in order to maintain a clean, organized place for pure AOSP support for various OMAP4 devices.
-        <br />
-        <br />The goal is to provide stable and optimized releases of the recent Android versions for the supported devices, which are currently the Galaxy Nexus and the Samsung Galaxy Tab 2 series - hopefully, the list will grow in the future.
-        <br />This organization's goal is not to create feature packed ROMs, but to create a base ROM in such a way that custom ROM developers can easily adapt our changes.
-        <br />
-        <br />Source Code:<a href="https://github.com/OMAP4-AOSP"> OMAP4-AOSP Github page</a>
-        </p>
-        <br />
-        <br />
-        <div class="alert alert-dismissible alert-warning">
+        <div class="container">
+          <h2 id="heading">About the OMAP4-Android OpenSource Project</h2>
+          <p>The OMAP4-Android OpenSource Project was created in late 2015 in order to maintain a clean, organized place for pure AOSP support for various OMAP4 devices.
+          <br />
+          <br />The goal is to provide stable and optimized releases of the recent Android versions for the supported devices, which are currently the Galaxy Nexus and the Samsung Galaxy Tab 2 series - hopefully, the list will grow in the future.
+          <br />This organization's goal is not to create feature packed ROMs, but to create a base ROM in such a way that custom ROM developers can easily adapt our changes.
+          <br />
+          <br />Source Code:<a href="https://github.com/OMAP4-AOSP"> OMAP4-AOSP Github page</a>
+          </p>
+          <br />
+          <br />
+        </div>
+
+        <div class="container">
+          <div class="alert alert-dismissible alert-warning">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <h4>Warning!</h4>
             <p>
@@ -68,15 +80,18 @@
                Please do some research if you have any concerns about features included in this Roms before flashing it!<br />
                YOU are choosing to make these modifications!</p>
             </p>
+          </div>
         </div>
 
-        <div class="alert alert-dismissible alert-warning">
+        <div class="container">
+          <div class="alert alert-dismissible alert-warning">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <h4>Important Information for kangers</h4>
             <p>
             <p>If you're going to reuse our work, which we're doing for free, be fair and give proper credits. This is the only payment we're really demanding and we deserve it to be mentioned because of
                the countless hours we've put into this project.<br />
                Open-Source doesn't meant Out-of-Respect!</p>
+          </div>
         </div>
       </div>
 
@@ -133,7 +148,14 @@
                           </a>
                       </div>
                   </div>
+              </div>
+          </div>
 
+          <div class="panel panel-default">
+              <div class="panel-body">
+                  <div class="g-plusone right" data-annotation="inline" data-width="200"></div>
+                  <div class="fb-like" data-href="https://omap4-aosp.github.io" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" data-width="230"></div>
+                  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
               </div>
           </div>
       </div>
@@ -150,9 +172,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="assets/jquery.fittext.js"></script>
-    <script type="text/javascript">
-		$("#heading").fitText(1.1, { minFontSize: '40px', maxFontSize: '59px' });
-    </script>
+    <script type="text/javascript">$("#heading").fitText(1.1, { minFontSize: '40px', maxFontSize: '59px' });</script>
+    <script src="assets/social.js"></script>
 
-    </body>
+</body>
 </html>
