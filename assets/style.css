@@ -37,3 +37,10 @@ body {
 
 	}
 }
+
+.team-container {
+        height: auto;
+        width: 6.5em;
+        min-width: 6.5em;
+        border-radius: 50%;
+}
