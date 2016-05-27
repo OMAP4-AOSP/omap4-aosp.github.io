@@ -38,6 +38,18 @@ body {
 	}
 }
 
+.team-card {
+        width: 100%;
+        background-color: #FAFAFA;
+        border-radius: 15px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+        box-shadow: rgba(0, 0, 0, 0.0980392) 0 2px 4px, rgba(0, 0, 0, 0.0980392) 0 0 3px;
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+}
+
 .team-container {
         height: auto;
         width: 6.5em;
