@@ -11,9 +11,9 @@
     <!-- Theme -->
     <link href="assets/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main">
     <div class="container">
-      <!-- Static navbar -->
+      <!-- Fixed navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -48,9 +48,17 @@
           </div>
         </div>
       </nav>
-      <!-- Main body -->
+    </div>
+
+    <!-- Main body -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 id="heading">AOSP for Samsung Galaxy Nexus</h1>
+      </div>
+    </div>
+
+    <div class="container">
       <div class="jumbotron">
-        <h2>AOSP for Samsung Galaxy Nexus</h2>
         <p>For the Galaxy Nexus, we start by releasing Marshmallow builds.</p>
         <p>The first public build has something exclusive for the Galaxy Nexus, yet unseen on any other OMAP4 device: all carveouts reserved for Ducati (the multimedia subsystem of OMAP4,
            responsible for hardware-accelerated video decoding, encoding and camera functionality) have been switched over to CMA.</p>
