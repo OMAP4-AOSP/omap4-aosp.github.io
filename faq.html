@@ -80,10 +80,11 @@
           </ul>
         </ul>
         <br />
+        <hr />
         <p><b>Rom installation failed on "error 7" in recovery, what can i do?</b></p>
         <p>Best will be to post a recovery.log. There's an option inside your recovery to create one.</p>
         <p>You can get the log to your PC using adb:</p>
-        <p>$ adb pull /path/to/log/log.name</p>
+        <pre><code>adb pull /path/to/log/log.name</code></pre>
         <br />
         <p>If this is not possible for your: tell the whole message you get! There are different "error 7" messages out!</p>
         <ul>
@@ -92,31 +93,30 @@
           <li>it could be your recovery is to old (official CWM is to old, a lot of user still use it)</li>
         </ul>
         <br />
+        <hr />
         <p><b>How to enable root access?</b></p>
-        <p><button class="btn btn-xs btn-danger" type="button">Note:</button> OMAP4-AOSP Roms aren't pre-rooted, you need to use <a href="http://forum.xda-developers.com/showthread.php?t=1538053">SuperSu</a> or the <a href="http://forum.xda-developers.com/android/software-hacking/wip-selinux-capable-superuser-t3216394">OpenSource SuperUser</a> to get rooted.</p>
+        <p>OMAP4-AOSP Roms aren't pre-rooted, you need to use <a href="http://forum.xda-developers.com/showthread.php?t=1538053">SuperSu</a> or the <a href="http://forum.xda-developers.com/android/software-hacking/wip-selinux-capable-superuser-t3216394">OpenSource SuperUser</a> to get rooted.</p>
         <br />
+        <hr />
         <p><b>How do i get proper logs?</b></p>
         <p>Well, there are some apps out (e.g. Syslog App) which can help getting usefull logs, but i prefer using adb to get those logs:
         <ul>
-          <li>Logcat:
-          <br />$ adb shell logcat > logcat.txt
-          <br />(abort/stop logging pressing "Ctrl+C" on your keyboard)</li>
-          <br />
-          <li>Radio Logcat:
-          <br />$ adb logcat -b radio -v time -d > logcat_radio.log</li>
-          <br />
-          <li>Dmesg:
-          <br />$ adb shell dmesg > dmesg.txt</li>
-          <br />
-          <li>last_kmsg:
-          <br />$ adb shell su -c "cat /proc/last_kmsg" > last_kmsg.txt</li>
-          <br />
-          <li>audit.log:
-          <br />(make sure root is enabled!)
-          <br />$ adb root
-          <br />$ adb pull /data/misc/audit/audit.log</li>
+          <li>Logcat:</li>
+            <pre><code>adb shell logcat > logcat.txt</code></pre>
+            <p>(abort/stop logging pressing <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd> on your keyboard)</p>
+          <li>Radio Logcat:</li>
+            <pre><code>adb logcat -b radio -v time -d > logcat_radio.log</code></pre>
+          <li>Dmesg:</li>
+            <pre><code>adb shell dmesg > dmesg.txt</code></pre>
+          <li>last_kmsg:</li>
+            <pre><code>adb shell su -c "cat /proc/last_kmsg" > last_kmsg.txt</code></pre>
+          <li>audit.log:</li>
+            <p>(make sure root is enabled!)</p>
+            <pre><code>adb root
+            <br />adb pull /data/misc/audit/audit.log</code></pre>
         </ul>
         <br />
+        <hr />
       </div>
     </div>
 
