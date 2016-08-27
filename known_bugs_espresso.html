@@ -64,9 +64,22 @@
 
     <div class="container">
       <div class="jumbotron">
-      <ul>
-        <li>(will be added later)</li>
-      </ul>
+        <p><b>General Android 6.0 bugs</b></p>
+        <ul>
+          <p>Audio stuttering on some games:</p>
+          <ul>
+            <li>To fix it you will have to use a root explorer and delete system/etc/permissions/android.hardware.audio.low_latency.xml (well, this isn't a proper fix but a good workaround until it is fixed properly</li>
+          </ul>
+        </ul>
+        <br />
+        <p><b>AOSP specific bugs</b></p>
+        <ul>
+          <p>No hwrotation</p>
+          <ul>
+            <li>No hwrotation (meaning the boot animation is in landscape instead portrait on 7inch Tab2). We don't consider this as a problem, as autorotation will take effect after bootup anyways and most 7" tablets (like the Nexus 7) work this way as well.</li>
+          </ul>
+        </ul>
+        <br />
       </div>
     </div>
 
