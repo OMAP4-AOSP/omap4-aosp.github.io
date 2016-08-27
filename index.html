@@ -11,16 +11,17 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="OMAP4 Custom Rom Development" />
     <meta property="og:description"   content="OMAP4 Custom Rom Development" />
-    <!-- Latest compiled and minified CSS -->
-    <link href="assets/material.min.css" rel="stylesheet">
-    <!-- Theme -->
-    <link href="assets/style.css" rel="stylesheet">
-  </head>
 
-  <body class="main">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link href="assets/material-kit.css" rel="stylesheet"/>
+    <link href="assets/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  </head>
+  <body>
     <div class="container">
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-transparent navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -72,29 +73,35 @@
           <br />
         </div>
 
-        <div class="container">
-          <div class="alert alert-dismissible alert-warning">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h4>Warning!</h4>
-            <p>
-            <p>We are not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.<br />
-               Please do some research if you have any concerns about features included in this Roms before flashing it!<br />
-               YOU are choosing to make these modifications!</p>
-            </p>
-          </div>
+    <div class="alert alert-primary">
+      <div class="container">
+        <div class="alert-icon">
+          <i class="material-icons">warning</i>
         </div>
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Warning!</h4>
+        <p>
+        <p>We are not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.<br />
+           Please do some research if you have any concerns about features included in this Roms before flashing it!<br />
+           YOU are choosing to make these modifications!</p>
+        </p>
+      </div>
+    </div>
 
-        <div class="container">
-          <div class="alert alert-dismissible alert-warning">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h4>Important Information for kangers</h4>
-            <p>
-            <p>If you're going to reuse our work, which we're doing for free, be fair and give proper credits. This is the only payment we're really demanding and we deserve it to be mentioned because of
-               the countless hours we've put into this project.<br />
-               Open-Source doesn't meant Out-of-Respect!</p>
-          </div>
+    <div class="alert alert-primary">
+      <div class="container">
+        <div class="alert-icon">
+          <i class="material-icons">warning</i>
+        </div>
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Important Information for kangers</h4>
+        <p>
+        <p>If you're going to reuse our work, which we're doing for free, be fair and give proper credits. This is the only payment we're really demanding and we deserve it to be mentioned because of
+           the countless hours we've put into this project.<br />
+           Open-Source doesn't meant Out-of-Respect!</p>
         </div>
       </div>
+    </div>
 
       <div class="container">
           <div class="row">
@@ -175,6 +182,9 @@
     <script src="assets/jquery.fittext.js"></script>
     <script type="text/javascript">$("#heading").fitText(1.1, { minFontSize: '40px', maxFontSize: '59px' });</script>
     <script src="assets/social.js"></script>
+    <script src="assets/material-kit.js"></script>
+    <script src="assets/material.min.js"></script>
+    <script src="assets/scroll.js"></script>
 
 </body>
 </html>
