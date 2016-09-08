@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>OMAP4-AOSP</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link href="../assets/material-kit.css" rel="stylesheet"/>
+    <link href="../assets/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+
+  </head>
+  <body class="single">
+    <div class="container">
+      <nav class="navbar navbar-transparent navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">OMAP4-AOSP</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index.html">About</a></li>
+              <li><a href="../news.html">News</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Devices<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../roms_tuna.html">Samsung Galaxy Nexus</a></li>
+                  <li><a href="../roms_espresso.html">Samsung Galaxy Tab 2</a></li>
+                </ul>
+              </li>
+              <li><a href="../faq.html">FAQ</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Known bugs<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../known_bugs_tuna.html">Known bugs on Samsung Galaxy Nexus</a></li>
+                  <li><a href="../known_bugs_espresso.html">Known bugs on Samsung Galaxy Tab2</a></li>
+                </ul>
+              </li>
+              <li><a href="../team.html">Team</a></li>
+              <li><a href="../changelogs.html">Changelogs for Devs</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main body -->
+      <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../changelogs.html">Changelogs for Devs</a></li>
+        <li class="active">Android 7.0.0 R1 for OMAP4</li>
+      </ul>
+
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-12">
+          <p>This only includes changes on top of the Android Open Source Project source to compile pure AOSP for OMAP4 Devices.
+             The raw log was generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by <a href="https://plus.google.com/112218872649456413744/posts">JBQ</a> and improved by <a href="https://plus.google.com/+AlSutton/posts">Al Sutton</a>.</p>
+
+         <p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col-md-12">
+           <div id="changes">	
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_bionic">android_bionic</a></h2>
+<div id="android_bionic"><a href="https://github.com/OMAP4-AOSP/android_bionic/commit/c759e60">c759e60</a> :  libc: Fix absolute_timespec_from_timespec overflow.<br />
+<a href="https://github.com/OMAP4-AOSP/android_bionic/commit/448e8f4">448e8f4</a> :  linker: Add build flag to allow text relocations for platform libs.<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_bootable_recovery">android_bootable_recovery</a></h2>
+<div id="android_bootable_recovery"><a href="https://github.com/OMAP4-AOSP/android_bootable_recovery/commit/7233be6">7233be6</a> :  updater: Allow devices to suppress BLKDISCARD<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_build">android_build</a></h2>
+<div id="android_build"><a href="https://github.com/OMAP4-AOSP/android_build/commit/36cb877">36cb877</a> :  Allow override of device asserts, including multi-device support.<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/3436fa6">3436fa6</a> :  build: add ASCII Logo to edify script<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/aac7520">aac7520</a> :  Add cortex-a9 to armv7-a-neon, allow specifying FPU.<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/ec539eb">ec539eb</a> :  add support for overriding build.prop settings.<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/b6e0891">b6e0891</a> :  Set kernel gcc version to 4.8 for ARM targets<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/5b5c796">5b5c796</a> :  envsetup: set OUT_DIR to an absolute path always<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/46df1ee">46df1ee</a> :  Add support for TARGET_KERNEL_CUSTOM_TOOLCHAIN<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/3b3f4e2">3b3f4e2</a> :  build: Inline kernel building as a buildtime task<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/2528f1e">2528f1e</a> :  Revert "Remove legacy kernel build toolchain PATH setup in envsetup.sh"<br />
+<a href="https://github.com/OMAP4-AOSP/android_build/commit/d6ae86f">d6ae86f</a> :  Allow a device to generically define its own headers<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_frameworks_av">android_frameworks_av</a></h2>
+<div id="android_frameworks_av"><a href="https://github.com/OMAP4-AOSP/android_frameworks_av/commit/95215fc">95215fc</a> :  libstagefright: add missing TI color format case<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_av/commit/6b4c30c">6b4c30c</a> :  libstagefright: Make it possible to skip OMX buffer reallocation<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_av/commit/8d20a91">8d20a91</a> :  libstagefright: wfd: don't use intra macroblock refresh mode on omap4<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_frameworks_base">android_frameworks_base</a></h2>
+<div id="android_frameworks_base"><a href="https://github.com/OMAP4-AOSP/android_frameworks_base/commit/e534f07">e534f07</a> :  Framework: Fix GSM signal strength<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_base/commit/600b3a1">600b3a1</a> :  telephony: SignalStrengh: Don't calculate a LTE snr if the srq is invalid<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_base/commit/5275f6e">5275f6e</a> :  Add proper sized Wallpaper for Tablets<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_frameworks_native">android_frameworks_native</a></h2>
+<div id="android_frameworks_native"><a href="https://github.com/OMAP4-AOSP/android_frameworks_native/commit/bdf3c44">bdf3c44</a> :  libbinder: allow devices to disable ashmem size tracking<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_native/commit/123b6ee">123b6ee</a> :  Fix for landscape thumbnail images on GLES11RenderEngine<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_native/commit/7cc6220">7cc6220</a> :  Add back support for glReadPixels screenshot path.<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_native/commit/f527574">f527574</a> :  Remove warning "using EGL_IMG_context_priority"<br />
+<a href="https://github.com/OMAP4-AOSP/android_frameworks_native/commit/b157a28">b157a28</a> :  egl: Add back b/10194508 workaround.<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_hardware_ril">android_hardware_ril</a></h2>
+<div id="android_hardware_ril"><a href="https://github.com/OMAP4-AOSP/android_hardware_ril/commit/766266f">766266f</a> :  libril: allow board to provide libril<br />
+</div></p>
+
+<p><h2>Project: <a href="https://github.com/OMAP4-AOSP/android_system_core">android_system_core</a></h2>
+<div id="android_system_core"><a href="https://github.com/OMAP4-AOSP/android_system_core/commit/3d9db67">3d9db67</a> :  fs_mgr: zram: allow specifying stream count<br />
+<a href="https://github.com/OMAP4-AOSP/android_system_core/commit/f65b34a">f65b34a</a> :  init: disable flash_recovery<br />
+<a href="https://github.com/OMAP4-AOSP/android_system_core/commit/db64120">db64120</a> :  Revert "init/builtins.cpp: Switch to finit_module"<br />
+</div></p>
+           </div>
+         </div>
+         <a href="../changelogs.html" class="btn btn-raised btn-primary"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back to Changelogs</a>
+       </div>
+     </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"><a href="https://github.com/omap4-aosp" target="_blank">OMAP4-AOSP</a> &copy; 2016</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="../assets/material-kit.js"></script>
+    <script src="../assets/material.min.js"></script>
+    <script src="../assets/scroll.js"></script>
+      
+  </body>
+</html>
